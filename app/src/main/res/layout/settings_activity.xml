@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_stack">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/darkmode"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+</LinearLayout>
