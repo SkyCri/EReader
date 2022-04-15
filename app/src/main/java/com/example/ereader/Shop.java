@@ -6,16 +6,16 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Library extends AppCompatActivity {
+public class Shop extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_library);
-    }
-    public void openShop(View view) {
-        Intent intent = new Intent(this, Shop.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_shop);
     }
 
+    public void openDesc(View view) {
+        Intent intent = new Intent(this, Desc.class);
+        startActivity(intent);
+    }
 }
