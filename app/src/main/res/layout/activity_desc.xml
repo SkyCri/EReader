@@ -7,6 +7,7 @@
     android:background="@drawable/book_stack"
     tools:context=".Desc">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -20,15 +21,18 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="237dp"
         android:layout_marginTop="176dp"
         android:layout_marginEnd="40dp"
         android:clickable="false"
-        android:text="BookTitle"
+        android:gravity="center"
+        android:text="@string/booktitle"
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -38,8 +42,13 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="387dp"
         android:layout_marginEnd="38dp"
+        android:layout_marginBottom="50dp"
+        android:background="#3C3B3B"
+        android:backgroundTint="#3C3B3B"
+        android:padding="5dp"
         android:text="@string/descriptiontitle"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
