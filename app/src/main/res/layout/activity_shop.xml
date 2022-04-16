@@ -14,12 +14,12 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="160dp"
         android:layout_marginBottom="411dp"
-        android:onClick="openDesc"
+        android:onClick="openDescPlynck"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mobydick" />
+        app:srcCompat="@drawable/plynck" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -28,12 +28,12 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="411dp"
-        android:onClick="openDesc"
+        android:onClick="openDescSpell"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/generic" />
+        app:srcCompat="@drawable/spell" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -41,14 +41,14 @@
         android:layout_height="160dp"
         android:layout_marginTop="160dp"
         android:layout_marginBottom="411dp"
-        android:onClick="openDesc"
+        android:onClick="openDescParis"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/generic" />
+        app:srcCompat="@drawable/paris" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -57,12 +57,12 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="431dp"
         android:layout_marginBottom="140dp"
-        android:onClick="openDesc"
+        android:onClick="openDescWitness"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/generic" />
+        app:srcCompat="@drawable/stars" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -79,17 +79,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/generic" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="100dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="431dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="140dp"
-        android:onClick="openDesc"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/shop"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/generic" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="65dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
