@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +23,9 @@ public class Desc extends AppCompatActivity implements Serializable {
     String pubdate;
     String desc;
 
-    int status;
+    static int counter = 0;
+
+    static int status = -1;
 
 
     @Override
@@ -35,7 +38,19 @@ public class Desc extends AppCompatActivity implements Serializable {
         Bundle bundle = intent.getExtras();
         currBook = (Library.Book)bundle.getSerializable("sys");
 
+        //getting Download Status and Book Number
         status = currBook.getDownloadStatus();
+        counter = currBook.getCounter();
+
+        //set download button. If downloaded, have setas icon, otherwise download
+        if (currBook.getDownloadStatus() == 1) {
+            ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton8);
+
+            Resources resources = getResources();
+            int resourceId = resources.getIdentifier("book", "drawable", getPackageName());
+
+            imageButton.setImageResource(resourceId);
+        }
 
         //Set Book Cover
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
@@ -56,12 +71,12 @@ public class Desc extends AppCompatActivity implements Serializable {
         booktitle = currBook.getTitle();
         textView2.setText(booktitle);
 
-        //set author
+        //set Author
         TextView textView6 = (TextView) findViewById(R.id.textView6);
         author = currBook.getAuthor();
         textView6.setText(author);
 
-        //set pubdate
+        //set PubDate
         TextView textView7 = (TextView) findViewById(R.id.textView7);
         pubdate = currBook.getPubdate();
         textView7.setText(pubdate);
@@ -72,20 +87,46 @@ public class Desc extends AppCompatActivity implements Serializable {
 
         CharSequence text = "Default";
 
-        System.out.print("status: " + status);
+        switch(counter) {
+            case 1:
+                currBook = Library.sysofL;
+                break;
+            case 2:
+                currBook = Library.plynck;
+                break;
+            case 3:
+                currBook = Library.paris;
+                break;
+            case 4:
+                currBook = Library.spell;
+                break;
+            case 5:
+                currBook = Library.witness;
+                break;
+            default:
+                currBook = Library.paris;
+        }
 
+       //if not in library, download, else set as active book in reader
        if (status == 0) {
            text = "Downloaded!";
+           status = currBook.setDownloadStatus(1);
+           ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton8);
+
+           Resources resources = getResources();
+           int resourceId = resources.getIdentifier("book", "drawable", getPackageName());
+
+           imageButton.setImageResource(resourceId);
 
        }
         else
        {
            text = "Set as current book!";
-        //currBook.downloadstatus = 1;
+           Reader.bookselect = counter;
        }
 
+        //displays toast to signify result of if statement
         int duration = Toast.LENGTH_SHORT;
-
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }

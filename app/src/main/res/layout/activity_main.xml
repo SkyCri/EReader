@@ -68,7 +68,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="@string/welcomemessage"
         android:textColor="#FFFFFF"
         android:textSize="32sp"

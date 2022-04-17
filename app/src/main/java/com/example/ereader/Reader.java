@@ -12,37 +12,51 @@ import java.io.Serializable;
 
 public class Reader extends AppCompatActivity implements Serializable {
 
-    //ReaderBook currentBook;
+    public String currentBook;
+
+    public ReaderBook activebook = new ReaderBook();
+
+    public static int bookselect = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reader);
 
-        String currentBook = "witness";
-
-        //currentBook.setReaderbook("witness");
-        //String readerBook = currentBook.getReaderbook();
+        activebook.setReaderbook(bookselect);
 
         Resources res = getResources();
         int currbook = res.getIdentifier(currentBook, "raw", getPackageName());
         DocumentActivity.openDocument(this, currbook);
     }
 
-    public static class ReaderBook
+    public class ReaderBook
     {
-        String readerbook;
 
-        public void setReaderbook(String string)
+        public void setReaderbook(int bookselect)
         {
-            //readerbook = string;
-            //readerbook = "witness";
+            switch(bookselect) {
+                case 1:
+                    currentBook = "systemoflogic";
+                    break;
+                case 2:
+                    currentBook = "plynck";
+                    break;
+                case 3:
+                    currentBook = "paris";
+                    break;
+                case 4:
+                    currentBook = "spell";
+                    break;
+                case 5:
+                    currentBook = "witness";
+                    break;
+                default:
+                    currentBook = "paris";
+            }
         }
 
-        public String getReaderbook()
-        {
-            return readerbook;
-        }
+
     }
 
 }
