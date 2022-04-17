@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/layout/activity_desc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/drawable/rounded_corner.xml" value="0.2265" />
+        <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/layout/activity_community.xml" value="0.264" />
+        <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/layout/activity_desc.xml" value="0.6" />
         <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/layout/activity_document.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/layout/activity_library.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/skysm/AndroidStudioProjects/EReader/app/src/main/res/layout/activity_main.xml" value="0.264" />
