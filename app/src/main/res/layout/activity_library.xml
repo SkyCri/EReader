@@ -13,9 +13,9 @@
         android:layout_height="78dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:scaleType="fitXY"
-        android:onClick="openShop"
         android:backgroundTint="#FFFFFF"
+        android:onClick="openShop"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shopicon" />
@@ -27,23 +27,56 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="160dp"
         android:layout_marginBottom="411dp"
-        android:onClick="openLibDescSys"
         android:background="@null"
+        android:onClick="openLibDescSys"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/systemoflogic" />
 
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="411dp"
+        android:background="@null"
+        android:onClick="openLibDescWitness"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stars"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="411dp"
+        android:background="@null"
+        android:onClick="openLibDescSpell"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spell"
+        tools:visibility="invisible" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="@string/Library"
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

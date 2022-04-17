@@ -20,7 +20,7 @@ public class Shop extends AppCompatActivity implements Serializable {
     public void openDescPlynck(View view) {
         Intent intent = new Intent(this, Desc.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("sys", plynck);
+        bundle.putSerializable("sys", Library.plynck);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -28,7 +28,7 @@ public class Shop extends AppCompatActivity implements Serializable {
     public void openDescParis(View view) {
         Intent intent = new Intent(this, Desc.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("sys", paris);
+        bundle.putSerializable("sys", Library.paris);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -36,7 +36,7 @@ public class Shop extends AppCompatActivity implements Serializable {
     public void openDescSpell(View view) {
         Intent intent = new Intent(this, Desc.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("sys", spell);
+        bundle.putSerializable("sys", Library.spell);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -44,7 +44,7 @@ public class Shop extends AppCompatActivity implements Serializable {
     public void openDescWitness(View view) {
         Intent intent = new Intent(this, Desc.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("sys", witness);
+        bundle.putSerializable("sys", Library.witness);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -52,39 +52,9 @@ public class Shop extends AppCompatActivity implements Serializable {
     public void openDesc(View view) {
         Intent intent = new Intent(this, Desc.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("sys", paris);
+        bundle.putSerializable("sys", Library.paris);
         intent.putExtras(bundle);
         startActivity(intent);
     }
 
-
-    Library.Book sysofL = new Library.Book("A System of Logic","John Stuart Mill", "1843",
-            "The first major installment of his comprehensive restatement of an empiricist and " +
-                    "utilitarian position. It begins the attack on intuitionism which Mill " +
-                    "carried on throughout his life, and makes plain his belief that social planning" +
-                    " and political action should rely primarily on scientific knowledge, not on " +
-                    "authority, custom, revelation, or prescription.", 1,
-            "systemoflogic", "systemoflogic");
-
-    Library.Book paris = new Library.Book("Paris Talks","Abdu’l-Baha", "1912",
-            "A book transcribed from talks given by ʻAbdu'l-Bahá while in Paris in the first " +
-                    "stages of his journeys to the West.", 0,
-            "paris", "paris");
-
-    Library.Book plynck = new Library.Book("The Garden of the Plynck","Karle Wilson Baker", "1920",
-            "Classic fantastical children's story which pays homage to the likes of Lewis " +
-                    "Carroll's Alice's Adventures in Wonderland, beautifully illustrated by " +
-                    "Florence Minard.", 0,
-            "plynck", "plynck");
-
-    Library.Book spell = new Library.Book("McGuffey's Eclectic Spelling Book","W. H. McGuffey", "1865",
-            "A pictorial alphabet plus 248 individual lessons on spelling, grammar, " +
-                    "pronunciation, abbreviation, usage and more.", 0,
-            "spell", "spell");
-
-    Library.Book witness = new Library.Book("The Witness Of The Stars","E.W. Bullinger", "1893",
-            "Building upon ancient astronomical sources and modern scientific data, E. W. " +
-                    "Bullinger shows how the constellations witness to the accuracy of " +
-                    "biblical prophetic truths", 0,
-            "stars", "witness");
 }
