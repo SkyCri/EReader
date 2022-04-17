@@ -15,6 +15,7 @@
         android:layout_marginEnd="16dp"
         android:scaleType="fitXY"
         android:onClick="openShop"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shopicon" />
@@ -26,7 +27,8 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="160dp"
         android:layout_marginBottom="411dp"
-        android:onClick="openLibDesc"
+        android:onClick="openLibDescSys"
+        android:background="@null"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -58,25 +58,33 @@ public class Shop extends AppCompatActivity implements Serializable {
     }
 
 
-    Library.Book paris = new Library.Book("Paris Talks","Abdu’l-Baha", 1912,
+    Library.Book sysofL = new Library.Book("A System of Logic","John Stuart Mill", "1843",
+            "The first major installment of his comprehensive restatement of an empiricist and " +
+                    "utilitarian position. It begins the attack on intuitionism which Mill " +
+                    "carried on throughout his life, and makes plain his belief that social planning" +
+                    " and political action should rely primarily on scientific knowledge, not on " +
+                    "authority, custom, revelation, or prescription.", 1,
+            "systemoflogic", "systemoflogic");
+
+    Library.Book paris = new Library.Book("Paris Talks","Abdu’l-Baha", "1912",
             "A book transcribed from talks given by ʻAbdu'l-Bahá while in Paris in the first " +
                     "stages of his journeys to the West.", 0,
-            "paris");
+            "paris", "paris");
 
-    Library.Book plynck = new Library.Book("The Garden of the Plynck","Karle Wilson Baker", 1920,
+    Library.Book plynck = new Library.Book("The Garden of the Plynck","Karle Wilson Baker", "1920",
             "Classic fantastical children's story which pays homage to the likes of Lewis " +
                     "Carroll's Alice's Adventures in Wonderland, beautifully illustrated by " +
                     "Florence Minard.", 0,
-            "plynck");
+            "plynck", "plynck");
 
-    Library.Book spell = new Library.Book("McGuffey's Eclectic Spelling Book","W. H. McGuffey", 1865,
+    Library.Book spell = new Library.Book("McGuffey's Eclectic Spelling Book","W. H. McGuffey", "1865",
             "A pictorial alphabet plus 248 individual lessons on spelling, grammar, " +
                     "pronunciation, abbreviation, usage and more.", 0,
-            "spell");
+            "spell", "spell");
 
-    Library.Book witness = new Library.Book("The Witness Of The Stars","E.W. Bullinger", 1893,
+    Library.Book witness = new Library.Book("The Witness Of The Stars","E.W. Bullinger", "1893",
             "Building upon ancient astronomical sources and modern scientific data, E. W. " +
                     "Bullinger shows how the constellations witness to the accuracy of " +
                     "biblical prophetic truths", 0,
-            "stars");
+            "stars", "witness");
 }
